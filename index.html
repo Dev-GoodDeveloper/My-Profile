@@ -18,6 +18,7 @@
             <a href="#">Experience</a>
             <a href="#">Contact</a>
         </nav>
+        <div class="dark-mode" onclick="lightdarkmode()"><i class="fa-solid fa-moon"></i></div>
     </header>
     <section class="home">
         <div class="home-img">
@@ -26,7 +27,7 @@
         <div class="home-content">
             <h1>Hi, It's <span>Dev</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Thank you for visiting my profile.</p>
+            <p>It is my first website. Thank you for visiting my website.</p>
             <div class="social-icons">
                 <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
@@ -36,5 +37,21 @@
             <a href="https://www.google.co.in/" class="btn">Thank you</a>
         </div>
     </section>
+
+    <script>
+        function lightdarkmode(){
+            const darkMode = document.querySelector(".dark-mode i");
+            const elements = document.querySelectorAll("body,section,nav a");
+
+            darkMode.classList.toggle("fa-sun");
+            darkMode.classList.toggle("fa-moon");
+            darkMode.style.color = darkMode.classList.contains("fa-moon") ? "white" : "black";
+
+
+            elements.forEach(element => 
+            element.classList.toggle("dark-mode-class")    
+            );
+        }
+    </script>
 </body>
 </html>
