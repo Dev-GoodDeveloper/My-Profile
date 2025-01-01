@@ -14,6 +14,25 @@ html{
     font-size: 62.5%;
 }
 
+.dark-mode{
+    position: relative;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 1.03s ease;
+}
+
+.dark-mode:hover{
+    transform: scale(1.3);
+    color: rgb(100, 200, 215);
+}
+
+body.dark-mode-class,
+nav a.dark-mode-class,
+section.dark-mode-class{
+    color: black;
+    background-color: white;
+}
+
 body{
     width: 100%;
     height: 100vh;
@@ -40,7 +59,7 @@ header{
 .logo{
     display: inline-block;
     padding: 0.1rem 2rem;
-    background-color: rgb(10, 20, 40);
+    background-color: transparent;
     border-radius: 5rem;
     font-size: 4rem;
     font-weight: 600;
@@ -183,7 +202,7 @@ span{
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
-    background-color: rgb(10, 20, 40);
+    background-color: transparent;
     border-radius: 4rem;
     font-size: 1.6rem;
     color: rgb(100, 200, 215);
