@@ -93,7 +93,7 @@ nav a.active,nav a:hover{
     border-bottom: 3px solid rgb(100, 200, 215);
 }
 
-@media(max-width:995px){
+@media(max-width:100px){
     nav{
         position:absolute;
         display: none;
